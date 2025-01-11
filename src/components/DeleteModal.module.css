@@ -1,0 +1,92 @@
+.modalContainer {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modalContent {
+  position: relative;
+  z-index: 51;
+  width: 100%;
+  max-width: 32rem; /* 512px */
+  background-color: var(--gray-800);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content {
+  color: var(--gray-300);
+  font-size: 1.125rem;
+  text-align: center;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0 3.1875rem;
+}
+
+.cancelBtn {
+  width: 7.5rem;
+  height: 3rem;
+  padding: 0.75rem 2rem;
+  background: transparent;
+  font-size: 0.875rem;
+  border: 0;
+  font-weight: bold;
+  color: var(--gray-100);
+  cursor: pointer;
+  border-radius: 8px;
+
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.cancelBtn:hover {
+  background: var(--gray-600);
+}
+
+.deleteBtn {
+  width: 8.625rem;
+  height: 3rem;
+  padding: 0.75rem 2rem;
+  background: var(--gray-700);
+  font-size: 0.875rem;
+  border: 0;
+  font-weight: bold;
+  color: var(--red-500);
+  cursor: pointer;
+  border-radius: 8px;
+
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.deleteBtn:hover {
+  background: var(--gray-600);
+}
